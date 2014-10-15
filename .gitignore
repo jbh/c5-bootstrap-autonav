@@ -1,0 +1,6 @@
+# Local environment
+.DS_Store
+/.idea/
+/node_modules/
+.sass-cache
+tmp/*
