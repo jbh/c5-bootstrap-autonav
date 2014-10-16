@@ -4,9 +4,9 @@ This Concrete5 package adds a `bootstrap` template to the autonav block making i
 
 ## Installation
 
-    * Just drop put the c5-bootstrap-autonav folder into your packages directory.
-    * Go to the Concrete5 Dashboard, then to Extend Concrete5 (normally `/dashboard/extend/install/`).
-    * Install the `C5 Bootstrap Autonav` package.
+    + Just drop put the c5-bootstrap-autonav folder into your packages directory.
+    + Go to the Concrete5 Dashboard, then to Extend Concrete5 (normally `/dashboard/extend/install/`).
+    + Install the `C5 Bootstrap Autonav` package.
 
 ## Use
 
@@ -18,7 +18,10 @@ This template still only outputs the simple unordered list of navigation items, 
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -27,7 +30,8 @@ This template still only outputs the simple unordered list of navigation items, 
                 <a class="navbar-brand" href="/"></a>
             </div>
 
-            <!-- This is an example of doing it programmatically. One could still add a content editable area here. -->
+            <!-- This is an example of doing it programmatically.
+                 One could still add a content editable area here. -->
             <?php
             $nav = BlockType::getByHandle('autonav');
             $nav->controller->orderBy = 'display_asc';
@@ -44,4 +48,4 @@ This template still only outputs the simple unordered list of navigation items, 
 
 ## TODO
 
-    * Make navbar classes more editable, right now it is just navbar-right unless edited in code.
+    + Make navbar classes more editable, right now it is just navbar-right unless edited in code.
