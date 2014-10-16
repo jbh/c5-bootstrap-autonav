@@ -4,15 +4,15 @@ This Concrete5 package adds a `bootstrap` template to the autonav block making i
 
 ## Installation
 
-    + Just drop put the c5-bootstrap-autonav folder into your packages directory.
-    + Go to the Concrete5 Dashboard, then to Extend Concrete5 (normally `/dashboard/extend/install/`).
-    + Install the `C5 Bootstrap Autonav` package.
++ Just drop put the c5-bootstrap-autonav folder into your packages directory.
++ Go to the Concrete5 Dashboard, then to Extend Concrete5 (normally `/dashboard/extend/install/`).
++ Install the `C5 Bootstrap Autonav` package.
 
 ## Use
 
 This template still only outputs the simple unordered list of navigation items, but with bootstrap classes. Therefore you will still need to wrap it in bootstraps normal navigation wrappers. For example:
 
-```php
+```HTML+PHP
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-border"></div>
         <div class="container">
@@ -48,4 +48,4 @@ This template still only outputs the simple unordered list of navigation items, 
 
 ## TODO
 
-    + Make navbar classes more editable, right now it is just navbar-right unless edited in code.
++ Make navbar classes more editable, right now it is just navbar-right unless edited in code.
