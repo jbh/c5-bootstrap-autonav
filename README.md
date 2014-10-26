@@ -13,23 +13,20 @@ This Concrete5 package adds a `bootstrap` template to the autonav block making i
 This template still only outputs the simple unordered list of navigation items, but with bootstrap classes. Therefore you will still need to wrap it in bootstraps normal navigation wrappers. For example:
 
 ```HTML+PHP
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-border"></div>
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button"
-                        class="navbar-toggle collapsed"
-                        data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"></a>
-            </div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MainNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"></a>
+        </div>
 
+        <div class="collapse navbar-collapse" id="MainNavbar">
             <!-- This is an example of doing it programmatically.
                  One could still add a content editable area here. -->
             <?php
@@ -41,9 +38,9 @@ This template still only outputs the simple unordered list of navigation items, 
             $nav->controller->displaySubPageLevelsNum = 1;
             $nav->render('templates/bootstrap');
             ?>
-        </div><!-- /.container-fluid -->
-        <div class="navbar-border"></div>
-    </nav>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
 ```
 
 ## TODO
