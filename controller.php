@@ -5,7 +5,7 @@ class C5BootstrapAutonavPackage extends Package {
 	protected $pkgHandle = 'c5-bootstrap-autonav';
 	protected $pkgName = 'C5 Bootstrap Autonav';
 	protected $pkgDescription = 'Adds a Bootstrap template for the core autonav block.';
-	protected $appVersionRequired = '5.6.1'; //requires 5.6.1 due to copious use of the "h()" function
+	protected $appVersionRequired = '5.7.5'; 
 	protected $pkgVersion = '0.1';
 
 
